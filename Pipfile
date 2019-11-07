@@ -13,6 +13,10 @@ django-extensions = "*"
 faker = "*"
 ipython = "*"
 panel = "*"
+jupyter = "*"
+numpy = "*"
+pandas = "*"
+matplotlib = "*"
 
 [requires]
 python_version = "3.7"
