@@ -17,6 +17,7 @@ jupyter = "*"
 numpy = "*"
 pandas = "*"
 matplotlib = "*"
+werkzeug = "*"
 
 [requires]
 python_version = "3.7"
