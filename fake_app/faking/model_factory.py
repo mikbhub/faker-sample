@@ -25,9 +25,10 @@ class BookFactory(factory.DjangoModelFactory):
     name = factory.Faker("sentence", nb_words=3)
     pages = factory.Faker("random_int", min=1, max=1000)
     price = factory.Faker("random_int", max=200)
-    rating = factory.Faker("random_int", min=1, max=10)
+    rating = factory.Faker("random_int", min=1, max=4)
     pubdate = factory.Faker("date")
     publisher = factory.SubFactory(PublisherFactory)
+
 
     @factory.post_generation
     def authors(self, create, extracted, **kwargs):

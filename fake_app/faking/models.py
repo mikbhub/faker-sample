@@ -23,13 +23,21 @@ class Publisher(models.Model):
 
 
 class Book(models.Model):
+
+    _rating = (
+        (1, "Bad"),
+        (2, "Avarage"),
+        (3, "Good"),
+        (4, "Great"),
+    )
+
     name = models.CharField(max_length=300)
     pages = models.IntegerField()
     price = models.DecimalField(max_digits=10, decimal_places=2)
-    rating = models.FloatField()
     authors = models.ManyToManyField(Author)
     publisher = models.ForeignKey(Publisher, on_delete=models.CASCADE)
     pubdate = models.DateField()
+    rating = models.IntegerField(choices=_rating)
 
     def __repr__(self):
         return f"{self.__class__.__name__} {self.name} by {' '.join(str(a) for a in self.authors.all())} published by {self.publisher}"
