@@ -38,7 +38,7 @@ class Book(models.Model):
     publisher = models.ForeignKey(Publisher, on_delete=models.CASCADE)
     pubdate = models.DateField()
     rating = models.IntegerField(choices=_rating)
-
+    
     def __repr__(self):
         return f"{self.__class__.__name__} {self.name} by {' '.join(str(a) for a in self.authors.all())} published by {self.publisher}"
 
