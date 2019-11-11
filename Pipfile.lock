@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "8ac7f59f2a7b40256916f847b2f7f190a7e36946e874ba357ec2aebeedb5e3d3"
+            "sha256": "a4ed69d6037869a0578ce13e833ffc18df01672dad827690ed6c0630b25b6327"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -16,6 +16,14 @@
         ]
     },
     "default": {
+        "altair": {
+            "hashes": [
+                "sha256:9abe13d88a3694857138ac61512c4f873f762f432cf82623eea4700d2a531525",
+                "sha256:bd8f42b487ffb67bdb1d2ae7970df69c0801431c9201742599525037bc8bd56d"
+            ],
+            "index": "pypi",
+            "version": "==3.2.0"
+        },
         "asgiref": {
             "hashes": [
                 "sha256:7e06d934a7718bf3975acbf87780ba678957b87c7adc056f13b6215d610695a0",
@@ -336,6 +344,7 @@
                 "sha256:399a4411e171170173344761e7fd4491a3625659881f76ce47c50231ed714d9b",
                 "sha256:f67d76a68b1074a91693e95dea903ea01fd02be7c9fac5a4b870b8475caed805"
             ],
+            "index": "pypi",
             "version": "==6.0.2"
         },
         "numpy": {
@@ -643,6 +652,12 @@
             ],
             "version": "==1.3"
         },
+        "toolz": {
+            "hashes": [
+                "sha256:08fdd5ef7c96480ad11c12d472de21acd32359996f69a5259299b540feba4560"
+            ],
+            "version": "==0.10.0"
+        },
         "tornado": {
             "hashes": [
                 "sha256:349884248c36801afa19e342a77cc4458caca694b0eda633f5878e458a44cb2c",
@@ -661,6 +676,22 @@
                 "sha256:d023ee369ddd2763310e4c3eae1ff649689440d4ae59d7485eb4cfbbe3e359f7"
             ],
             "version": "==4.3.3"
+        },
+        "vega": {
+            "hashes": [
+                "sha256:c66354d6d164cc3d7254bcd129d8d861daf4a9e9cb8738b1724791777f6c29f0",
+                "sha256:f0c0c90299e226392bf7ec4d4fa2ea06d39c1fba434b3c9c40a07915db65bb49"
+            ],
+            "index": "pypi",
+            "version": "==2.6.0"
+        },
+        "vega-datasets": {
+            "hashes": [
+                "sha256:20d490b417f84607eb5079400f608f2e9c135b7092bee10f6857f6d23136e459",
+                "sha256:63d6eaf129ab23a7d0744e54d11dba9e7eecc0974fd9a237cfae9cfdbef3c37a"
+            ],
+            "index": "pypi",
+            "version": "==0.7.0"
         },
         "wcwidth": {
             "hashes": [

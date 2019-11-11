@@ -18,6 +18,10 @@ numpy = "*"
 pandas = "*"
 matplotlib = "*"
 werkzeug = "*"
+altair = "*"
+vega-datasets = "*"
+notebook = "*"
+vega = "*"
 
 [requires]
 python_version = "3.7"
