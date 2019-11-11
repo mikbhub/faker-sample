@@ -7,6 +7,7 @@ from . import models
 
 class CSVDownloadView(View):
     def get(self, request):
+        # request.GET -> url params
         response = HttpResponse(content_type="text/csv")
         response["Content-Disposition"] = 'attachment; filename="somefilename.csv"'
 
