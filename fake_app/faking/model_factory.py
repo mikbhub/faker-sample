@@ -59,11 +59,7 @@ class StoreFactory(factory.DjangoModelFactory):
                 self.books.add(book)
 
 
-def fake_batch(size: int) -> None:
-    for f in (
-        ActorFactory,
-        PublisherFactory,
-        BookFactory,
-        StoreFactory,
-    ):
-        f.create_batch(size)
+def fake_batch(nodes: int = 10, leafs: int = 2) -> None:
+    for _ in range(nodes):
+        books = BookFactory.create_batch(size=leafs, authors=ActorFactory.create_batch(size=leafs))
+        StoreFactory.create(books=books)

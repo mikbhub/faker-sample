@@ -32,7 +32,7 @@ class Book(models.Model):
     pubdate = models.DateField()
 
     def __repr__(self):
-        return f"{self.__class__.__name__} {self.name} by {' '.join(self.authors)} published by {self.publisher}"
+        return f"{self.__class__.__name__} {self.name} by {' '.join(str(a) for a in self.authors.all())} published by {self.publisher}"
 
     def __str__(self):
         return self.__repr__()
